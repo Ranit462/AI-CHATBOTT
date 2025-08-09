@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    padding-bottom: 39px;
+    position: fixed;
+    
+}
+.chatcontainer{
+    width: 100%;
+    height: 80%;
+    background-color: rgb(153, 157, 159);
+   
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+    overflow: auto;
+     background-image: url(9117392.jpg);
+    
+    background-size: cover;
+   
+   
+}
+
+.userChatbox{
+    width: 50%; 
+    position: relative; 
+    left: 40%;
+    margin-left: 9.6rem;
+}
+.aiChatbox{
+    width: 60%;
+    position: relative;
+    
+}
+.header{
+    background-color: rgb(19, 19, 19);
+    width: 100%;
+    height: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-h1{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.userChatarea{
+    width: 90%;
+    padding: 20px;
+    background-color: transparent;
+    color: white;
+   border-radius: 40px 0px 40px 40px;
+   border: 0.5px solid;
+   display: flex;
+   gap: 1%;
+   flex-direction: column;
+   
+}
+.chooseimg{
+    width: 30%;
+}
+.aiChatarea{
+    width: 80%;
+  margin-left: -0.8rem;
+    padding: 20px;
+    background-color: transparent ;
+    position: relative;
+    left: 10%;
+    color: white;
+    font-weight: 1rem;
+    border-radius: 0px 40px 40px 40px;
+  border: 0.5px solid;
+ 
+}
+.load{
+    width: 1.6rem;
+}
+#userimg{
+    position: absolute;
+    right: 0;
+    filter: drop-shadow(2px 2px 2px black);
+}
+#aiimg{  
+    position: absolute;
+    left: 0;
+    filter: drop-shadow(2px 2px 2px black);
+}
+.promptArea{
+    width: 100%;
+    height: 20%;
+     background-image: url(aichatbot-prompt-bg.jpg);
+     background-size: cover;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.promptArea input{
+    width: 50%;
+    height: 80px;
+    background-color: black;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    padding: 20px;
+    color: white;
+    box-shadow: 2px 2px 2px black;
+}
+.promptArea button{
+    border-radius: 50px;
+    background-color: black;
+    border: none;
+    box-shadow: 5px 5px 5px rgb(24, 24, 24);
+    cursor: pointer;
+    transition: all 0.5s;
+    width: 70px;
+    height: 70px;
+}
+.promptArea button:hover{
+    background-color: rgb(37, 37, 37);
+}
+.choose{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+#image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.doubt{
+    color: rgb(201, 45, 240);
+}
+
+@media screen and (max-width:1360px) {
+    .aiChatbox{
+        font-size: 1rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .aiChatarea{
+        padding: 1rem;
+        margin-left: -0.4rem;
+       
+    }
+    #aiimg{
+        width: 2.7rem;
+    }
+    .userChatbox{
+        font-size: 1rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      margin-left: 4rem;
+      
+    }
+    .userChatarea{
+        padding: 1rem;
+        margin-left: 3.1rem;
+
+       
+    }
+    #userimg{
+        width: 3rem;
+        margin-right: -3.3rem;
+
+        
+    }
+    .load{
+        width: 1.6rem;
+    }
+
+    
+}
+
+
+@media screen and (max-width:1060px) {
+     .userChatbox{
+        font-size: 1rem;
+     margin-left: 2.6rem;
+       }
+    .userChatarea{
+        
+        margin-left: 3.1rem;
+ }}
+
+@media screen and (max-width:920px) {
+    
+    .aiChatarea{
+        padding: 1rem;
+        margin-left: 1rem;
+        }
+     .userChatbox{
+        font-size: 1rem;
+         margin-left: 2rem;
+       }
+    .userChatarea{
+        padding: 1rem;
+        margin-left: 2rem;
+ }}
+
+@media screen and (max-width:810px) {
+     .userChatbox{
+        font-size: 1rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      margin-left: 2rem;
+       }
+    .userChatarea{
+        padding: 1rem;
+        margin-left: 2rem;
+ }
+   }
+
+@media screen and (max-width:725px) {
+    .promptArea input{
+        height: 3.5rem;
+    }
+    .promptArea button{
+        width: 3rem;
+        height: 3rem;
+    }
+    .promptArea button img{
+        width: 1rem;
+    }
+   
+       
+    .aiChatarea{
+        padding: 1rem;
+        margin-left: 1rem;
+         }
+    .userChatbox{
+        font-size: 1rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      margin-left: 1rem;
+       }
+    .userChatarea{
+        padding: 1rem;
+        margin-left: 2rem;
+}}
+@media screen and (max-width:600px){
+    .aiChatarea{
+        margin-left: 1rem;
+    }
+    .userChatbox{
+        margin-left: -0.4rem;
+    }
+    .userChatarea{
+      margin-right: 2px;
+       
+    }
+    #aiimg{
+        width: 2.5rem;
+    }
+}
+
+
+@media screen and (max-width:450px) {
+    .aiChatbox{
+        font-size: 0.8rem;
+        
+    }
+    .aiChatarea{
+        padding: 0.8rem;
+        margin-left: 1.5rem;
+       
+    }
+    #aiimg{
+        width: 2rem;
+    }
+    .userChatbox{
+        font-size: 0.8rem;
+        
+      margin-left: -0.2rem;
+      
+    }
+    .userChatarea{
+        padding: 1rem;
+        margin-left: 0.7rem;
+
+       
+    }
+    #userimg{
+        width: 2.7rem;
+        margin-right: -2.7rem;
+
+        
+    }
+    .load{
+        width: 1rem;
+    }
+
+    
+}
+
