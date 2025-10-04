@@ -43,7 +43,7 @@ Example:
 
 ## 🧰 Installation & Usage
 
-1. Clone this repository:
+1. Clone this repository:https://github.com/Ranit462/AI-CHATBOTT.git
 
 
 ## Future Enhancements
